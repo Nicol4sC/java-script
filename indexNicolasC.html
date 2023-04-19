@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        function escreve() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = var1.value *var1.value *var1.value
+        }
+        function escreve2()  {
+            //f para c
+            var var2 = document.getElementById("val2");
+            document.getElementById("resultado2").innerText = (var2.value -32) *5/9 + " graus";
+        }
+        function escreve3(){
+            //trianglo
+            var var3 = document.getElementById("val3");
+            var var4 = document.getElementById("val4");
+            document.getElementById("resultado3").innerText = "a area do triangulo é de " + (var3.value*var4.value)/2;
+        }
+        function escreve4(){
+            //area circulo
+            var var5 = document.getElementById("val5");
+            var varpi= 3.141519
+            document.getElementById("resultado4").innerText = "a area do circulo é de " + varpi *(var5.value *var5.value);
+        }
+         function escreve5(){
+            //perimetro circulo
+            var var6 = document.getElementById("val6");
+            var varpi= 3.141519
+            document.getElementById("resultado5").innerText = "o perimetro do circulo é de " + 2* varpi *var6.value;
+        }
+         function desconto(){
+            //perimetro circulo
+            var var7 = document.getElementById("val7");
+            var varpc = (100)
+            var vardes = (5)
+            document.getElementById("resultado6").innerText = (var7.value / varpc) * vardes;
+
+            var varpc = (100)
+            var vardes = (5)
+            document.getElementById("resultado7").innerText = var7.value - (var7.value / varpc) * vardes;
+         }
+         function idade(){
+            //idade
+             var var8 = document.getElementById ("val8");
+             if (var8.value <=2005) {
+             document.getElementById("resultado8").innerText = ("você é maior de idade");
+             }else if (var8.value >2005) {
+             document.getElementById("resultado8").innerText = ("você é menor de idade");
+             }
+         }
+         function carro(){
+            //carros
+            var var9 = document.getElementById ("val9");
+            document.getElementById("resultado9").innerText = "você pode comprar " + (var9.value/5) + " litros";
+            document.getElementById("resultado10").innerText = "você consegue rodar " + (var9.value/5) * 20 + " quilometros";
+         }
+
+
+    </script>
+    <input id="val1" value="1">
+    <button onclick="escreve()">Escrever</button>
+    <p id="resultado">XXXX</p>
+
+    <input id="val2" value="2">
+    <button onclick="escreve2()">Escrever</button>
+    <p id="resultado2">XXXX</p>
+
+    <input id="val3" value="3">
+    <input id="val4" value="4">
+    <button onclick="escreve3()">Calcular</button>
+    <p id="resultado3">XXXX</p>
+
+    <input id="val5" value="5">
+    <button onclick="escreve4()">Calcular</button>
+    <p id="resultado4">XXXX</p>
+ 
+    <input id="val6" value="6">
+    <button onclick="escreve5()">Calcular</button>
+    <p id="resultado5">XXXX</p>
+
+    <input id="val7" value="7">
+    <button onclick="desconto()">Calcular 5%</button>
+    <p id="resultado6">XXXX</p>
+    <p id="resultado7">XXXX</p>
+
+    <input id="val8" value="8">
+    <button onclick="idade()">Idade</button>
+    <p id="resultado8">XXXX</p>
+
+    <input id="val9" value="9">
+    <button onclick="carro()">Quilometros e combustivel</button>
+    <p id="resultado9">XXXX</p>
+    <p id="resultado10">XXXX</p>
+
+    
+
+
+
+ 
+ 
+
+</body>
+</html>
+
